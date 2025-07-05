@@ -1,10 +1,21 @@
+import Button from "./components/Button";
+
 function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-blue-500">
-      <h1 className="text-4xl font-bold text-white mb-4">Hello Tailwind</h1>
-      <button className="bg-white text-blue-600 px-6 py-2 rounded-lg shadow hover:bg-blue-100 transition">
-        Click Me
-      </button>
+    <div className="min-h-screen flex flex-col items-center justify-center gap-4 bg-gray-100">
+      <Button>기본 버튼</Button>
+      <Button disabled>비활성 버튼</Button>
+      <div className="flex gap-2">
+        <Button size="sm">Small</Button>
+        <Button size="md">Medium</Button>
+        <Button size="lg">Large</Button>
+      </div>
+      <div className="flex gap-2">
+        <Button color="blue">Blue</Button>
+        <Button color="gray">Gray</Button>
+        <Button color="red">Red</Button>
+        <Button color="green">Green</Button>
+      </div>
     </div>
   );
 }
