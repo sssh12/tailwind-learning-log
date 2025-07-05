@@ -4,6 +4,8 @@ ButtonProps: 타입스크립트로 버튼의 프로퍼티를 정의합니다.
   React.ButtonHTMLAttributes<HTMLButtonElement>를 상속하므로 onClick, disabled 등도 그대로 사용 가능합니다.
 */
 
+"use client";
+
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   size?: "sm" | "md" | "lg";
   color?: "blue" | "gray" | "red" | "green";
